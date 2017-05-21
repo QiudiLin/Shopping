@@ -1,0 +1,58 @@
+
+* {  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0;padding: 0;
+}
+html,body { -webkit-text-size-adjust:none; }
+#taobao { min-height: 6.4rem; padding-bottom: .2rem; overflow: hidden; position: relative; }
+#taobao .taobao1 { background-color: #f0f0f2; }
+#taobao .head-title { font-size: 16px; line-height: .65rem; text-align: center; height: .65rem; }
+#taobao .search-box { height: .67rem;background-color: #ff6c5c; border-color: #bbbbbb; line-height: 20px; position: relative; }
+#taobao .search-box:after{ content: "."; height: 0; visibility: hidden; display: block; clear: both; }
+#taobao .search-box .search-input {  float: left; height: .48rem; font-size: 14px;  border-radius: 5px; border-width: 0px; border-style: solid; text-align: left; font-weight: normal; font-style: normal; z-index: 5; opacity: 1; margin-left: .3rem; margin-top: .09rem; position: relative; width: 78%; background-color: #fff; }
+#taobao .search-box .search-input:after{ content: "."; height: 0; visibility: hidden; display: block; clear: both; }
+#taobao .search-box .search-input>input {  display: block; position: absolute; left: 0; width: 100%; height: .48rem;padding: 0 8px; color: inherit; border: none; border-radius: inherit; outline: none; background: inherit; text-align: inherit; line-height: inherit; padding-right: .68rem; }
+#taobao .search-box .search-input>span { display: block; background: url("../imagic/search.png") no-repeat; width: .45rem; height: .45rem; background-size: cover; position: absolute; right: .13rem; top: .03rem; }
+#taobao .search-box .search-input>span:after { content: " "; display: block; width: 1px; height: 85%; position: absolute; right: .53rem; top: .03rem; background-color: #ff6c5c; }
+#taobao .search-box .search-customer { display: block; width: .45rem; height: .45rem; background: url("../imagic/add.png") no-repeat; background-size: cover; position: absolute; right: .35rem; top: .1rem; }
+
+#taobao .nav-box {  height: .65rem; overflow: hidden; background-color: #fff; padding-left: .1rem; }
+#taobao .nav-box>ul { display: table; table-layout: fixed; height: 100%; width: 100%; line-height: .62rem; }
+#taobao .nav-box>ul>li { display: table-cell; text-align: center;  color: rgb(16,16,16); font-size: 16px;height: 100%; width: 100%; border-bottom: 1px solid #ccc; padding: 0 .1rem; }
+#taobao .nav-box>ul>li.select { color: #ff6c5c; border-bottom-color: #ff6c5c; }
+
+#taobao .content-box { background-color: #f0f0f2; overflow: hidden; padding-bottom: .2rem;    padding-left: .03rem; }
+#taobao .content-box .content { float: left; background-color: #fff; width: 47%; text-align: center; padding-bottom: .15rem;  margin: 0 .08rem; margin-top: .1rem; }
+#taobao .content-box .content .img-box { display: inline-block; padding: .1rem; width: 3rem; font-size: 12px;  color: #ff6c5c; }
+#taobao .content-box .content .img-box>img { display: inline-block; width: 2.8rem; }
+#taobao .content-box .content-title { font-size: 12px; color: #101010; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: .3rem; margin-top: .05rem; padding-bottom: .06rem; }
+
+#taobao .before-price-box { color: #787878; text-align: left; line-height: .3rem; }
+#taobao .before-price-box .before-price {text-decoration: line-through; }
+#taobao .now-price-box { text-align: left; line-height: .3rem; }
+#taobao .free-postage { border: 1px solid rgb(187,187,187); padding: 0.02rem .08rem; font-size: 10px; }
+#taobao .btn-box { text-align: center; height: .5rem; }
+#taobao .btn-box:after{ content: "."; height: 0; visibility: hidden; display: block; clear: both; }
+#taobao .btn { display: inline-block; float: left; width: 1.3rem; border-radius: 2px; background-color: #ff6c5c; height: .5rem; line-height: .5rem;  color: #fff; text-align: center; font-size: 12px; }
+#taobao .btn.btn-buy { margin-right: .1rem; margin-left: .25rem; }
+
+#taobao .taobao2 { display: none; background-color: #f5dedc; overflow: hidden; min-height: 11rem; }
+#taobao .taobao2 .back-box { height: .67rem; background-color: #fff; text-align: center; position: relative; color: #ff7c6e; margin-top: .5rem; line-height: .2rem; }
+#taobao .taobao2 .back-box .back { display: inline-block; position: absolute; left: 2%; font-size: 15px; color: rgb(255, 124, 110); height: .67rem; line-height: .67rem; padding-left: .3rem; }
+#taobao .taobao2 .back-box .back:before { content: "<";display: block; position: absolute; font-size: 18px; font-weight: bold; left: 0; }
+#taobao .taobao2 .back-box b { font-size: 19px; letter-spacing: 2px; }
+#taobao .taobao2 .share-box { border-radius: 9px; width: 4.85rem; margin: .4rem auto 0; background-color: #fff; position: relative; z-index: 2; overflow: hidden; }
+#taobao .taobao2 .share-box .share-img-box { background-color: #ff7c6e; width: 100%; height: 1.7rem;     padding-top: 1rem; }
+#taobao .taobao2 .share-box .share-img-box>img { display: block; width: 1.5rem; height: 1.5rem; border-radius: 50%; margin: 0 auto; }
+#taobao .taobao2 .share-content-box { font-size: 12px; padding: 1rem .4rem .3rem; }
+#taobao .taobao2 .share-content-box .share-content-title {  color: #303030; padding-left: .13rem; text-align: center; }
+#taobao .taobao2 .share-content-box .share-step-title { text-align: center; font-size: 15px; color: #ff7c6e; font-weight: bold; padding-top: .38rem; }
+#taobao .taobao2 .share-step-content { width: 97%; border: 1px dashed #bbb; margin: .2rem auto 0; padding: .1rem .1rem .15rem; text-align: center; }
+
+#taobao .taobao2 .share-tips { display: inline-block; padding: .08rem; background-color: #fff; position: relative; z-index: 3; color: #ff7c6e; font-size: 13px; text-align: center; top: -.3rem; }
+#taobao .taobao2 .share-tips>span { display: inline-block; background: url("../imagic/arrow.png") no-repeat; background-size: cover; width: .4rem; height: .3rem; background-position: 0 .03rem; }
+#taobao .taobao2 .share-coupon { font-size: 11px; margin-top: -.24rem; color: #4a454a; text-align: left; line-height: 16px; }
+
+#taobao .shadow-box { display: none; width: 100%; height: 100%; position: absolute; z-index: 100; top: 0; left: 0; margin-top: .65rem;  font-size: 29px; color: #4d4d4d; text-align: center; font-weight: bold; }
+#taobao .shadow-box .close { display: block; position: absolute; left: 0; width: .45rem; height: .45rem; background: url("../imagic/close.png") no-repeat; background-size: cover; left: 2%; top: 1%; z-index: 500; }
+#taobao .shadow-box .circlearrow { display: block; width: 100%; height: 100%; background: url("../imagic/circlearrow.png") no-repeat; background-size: contain; z-index: 400; position: relative; }
+#taobao .shadow { width: 100%; height: 100%; background-color: #f5dedc; opacity: .66; position: absolute; left: 0; }
+

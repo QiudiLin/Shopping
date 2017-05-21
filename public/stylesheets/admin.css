@@ -1,0 +1,9 @@
+
+#admin div.btn-add-box { text-align: right; }
+#admin div.btn-add-box .add{  margin-right: 108px; margin-top: -22px; }
+
+#admin .modal{ display: none; }
+#admin .modal .modal-header{ padding: 8px 15px; }
+#admin .modal .modal-body{ padding: 8px 15px; }
+#admin .modal-body input{ display: block; width: 80%; margin: 8px auto; padding: 5px; }
+#admin .modal-footer [data-act] { position: relative; z-index: 100; }

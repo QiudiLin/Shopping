@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/admin.css">
+</head>
+<body>
+<div id="admin">
+    <div class="container">
+    <div class="row"><div class="page-header"><h1>{{title}}</h1></div></div>
+</div>
+    <div class="btn-add-box"><button type="button" class="btn btn-success add">添加</button></div>
+    <div class="container">
+        <div class="row">
+            <table class="table table-hover table-bordered" data-sys="table">
+                <thead>
+                <tr>
+                    <th>商品ID</th>
+                    <th>商品名称</th>
+                    <th>商品类别</th>
+                    <th>图片链接</th>
+                    <th>在售价</th>
+                    <th>券后价</th>
+                    <th>是否包邮</th>
+                    <th>购物券淘口令</th>
+                    <th>商品淘口令</th>
+                    <th>修改</th>
+                    <th>删除</th>
+                </tr></thead>
+                <tbody>
+                {%for item in shopping%}
+                <tr class="item-id-1" data-sys-id='{{item.id}}'>
+                    <td data-sysname='id'>{{item.id}}</td>
+                    <td data-sysname='title'>{{item.title}}</td>
+                    <td data-sysname='category'>{{item.category}}</td>
+                    <td data-sysname='img'>{{item.img}}</td>
+                    <td data-sysname='beforeprice'>{{item.beforeprice}}</td>
+                    <td data-sysname='nowprice'>{{item.nowprice}}</td>
+                    <td data-sysname='postage'>{{item.postage}}</td>
+                    <td data-sysname='goodscommand'>{{item.goodscommand}}</td>
+                    <td data-sysname='shopscommand'>{{item.shopscommand}}</td>
+                    <td><button type="button" class="btn btn-info edit">修改</button></td>
+                    <td><button type="button" class="btn btn-danger del">删除</button></td>
+                </tr>
+                {%endfor%}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="popover-box"><div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" data-act="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">添加商品</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="商品ID(不能重复)" data-sysname="id">
+                    <input type="text" placeholder="商品名称" data-sysname="title">
+                    <input type="text" placeholder="类别" data-sysname="category">
+                    <input type="text" placeholder="图片网址" data-sysname="img">
+                    <input type="text" placeholder="在售价" data-sysname="beforeprice">
+                    <input type="text" placeholder="券后价" data-sysname="nowprice">
+                    <input type="text" placeholder="是否包邮(true or false)" data-sysname="postage">
+                    <input type="text" placeholder="购物券淘口令" data-sysname="goodscommand">
+                    <input type="text" placeholder="商品淘口令" data-sysname="shopscommand">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-act="close" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary save">保存</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    </div>
+</div>
+<script src="/javascript/jquery-3.1.0.min.js"></script>
+<script src="/javascript/admin.js"></script>
+</body>
+</html>

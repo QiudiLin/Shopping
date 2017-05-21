@@ -1,0 +1,24 @@
+{
+  "name": "taobao",
+  "version": "1.0.0",
+  "description": "Simple app to show how you setup express and nunjucks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon index.js --debug"
+  },
+  "author": "Corban Baxter <corbanb@gmail.com> (http://barbershop.io)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-session": "~1.9.3",
+    "nunjucks": "^2.2.0",
+    "path": "~0.4.9",
+    "multer": "~0.1.6",
+    "body-parser": "~1.10.0",
+    "mongoose": "~3.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}

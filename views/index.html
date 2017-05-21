@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/taobao.css">
+</head>
+<body>
+<div id="taobao">
+    <div class="taobao-step taobao1">  <h1 class="head-title">{{title}}</h1>
+        <div class="search-box">
+            <div class="search-input"> <input type="text" placeholder="请输入关键词搜索宝贝"><span data-act="search"></span></div>
+            <span class="search-customer"></span>
+        </div>
+        <div class="nav-box"><ul>
+            <li class="select" data-category="total">全部</li>
+            <li>精选</li>
+            <li data-category="meizhuang">美妆</li>
+            <li data-category="riyongpin">日用品</li>
+            <li data-category="fuzhuang">服裝</li></ul></div>
+        <div class="content-box">
+            {% for item in  shopping%}
+            <div class="content" data-category="{{item.category}}" data-name="{{item.title}}">
+                <div class="img-box">  <img src="{{item.img}}" alt="shopping">
+                    <p class="content-title">{{item.title}}</p>
+                    <div class="now-price-box"><span>券后价：</span><span class="now-price">￥ {{item.nowprice}}</span>
+                        {%if item.postage==true%}
+                        {% else %}
+                        <span class="free-postage">包邮</span>
+                        {% endif %}
+                    </div>
+                    <div class="before-price-box"><span>在售价：</span><span class="before-price">￥ {{item.beforeprice}}</span></div></div>
+                <div class="btn-box"><span class="btn btn-buy">领券购买</span><span class="btn btn-share">分享好友</span></div>
+            </div>
+            {% endfor %}
+        </div></div>
+   <div class="taobao-step taobao2">
+       <div class="back-box"><span class="back">返回</span><b>两步立享优惠</b></div>
+       <div class="share-box">
+           <div class="share-img-box"><img src="" alt="shopping1"></div>
+           <div class="share-content-box">
+               <p class="share-content-title"></p>
+               <p class="share-step-title">Step.1 领取购物券</p>
+               <div class="share-step-content">
+                   <div class="share-tips">长按框内<span></span>全选 <span></span>复制</div>
+                   <p class="share-coupon">复制框内整段文字，打开「手机淘宝」即可「领取购物券」</p>
+
+               </div>
+               <p class="share-step-title">Step.2 宝贝优惠购</p>
+               <div class="share-step-content">
+                   <div class="share-tips">长按框内<span></span>全选 <span></span>复制</div>
+                   <p class="share-coupon">复制框内整段文字，打开「手机淘宝」即可「浏览宝贝」</p>
+
+               </div>
+           </div>
+       </div>
+   </div>
+
+    <div class="shadow-box">
+        <div class="shadow"></div>
+        <span class="close"></span>
+        <span class="circlearrow"></span>
+
+    </div>
+</div>
+
+<script src="/javascript/jquery-3.1.0.min.js"></script>
+<script src="/javascript/taobao.js"></script>
+</body>
+</html>
